@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -oE '\b(\w+)\b' <<< "$@" | sort | uniq -u
+tr ' ' '\n' <<< "$@" | sort | uniq -u
