@@ -1,2 +1,2 @@
 #!/bin/bash
-env -i sh -c 'export -p'; declare -F | awk "{if (\$3!=\"\") print \$3}" | less
+set
