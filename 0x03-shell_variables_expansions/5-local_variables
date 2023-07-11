@@ -1,2 +1,2 @@
 #!/bin/bash
-set; env | sort; declare -F | awk '{print $3}'
+env -i sh -c 'export -p'; declare -F | awk "{if (\$3!=\"\") print \$3}" | less
