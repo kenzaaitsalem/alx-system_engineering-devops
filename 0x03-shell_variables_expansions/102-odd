@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n | grep [13579][[:space:]] | tr -s '' | cut -f
+awk ' NR % 2 == 1 { print; } NR % 2 ==0 {print; }' file.fasta
